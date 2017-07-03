@@ -1,0 +1,15 @@
+border_size=1
+usage=map
+
+Dd, Dd, Dd, Gd, Gd, Gd, Gd, Gs, Wwg, Wwg, Wwg, Gs, Gd, Gd, Gd, Rd, Gd, Ce, Gd, Gs
+Dd, Dd, Dd, Dd, Dd, Dd, Dd, Gs, Wwg, Wwg, Wwg, Gs, Gd, Gd, Gd, Rd, Gd, Gd, Gd^Vhr, Gs
+Gd, Dd, Dd, Gd, Dd, Dd, Dd, Gs, Wwg, Wwg, Wwg, Wwf, Gd, Gd, Rd, Rd, Gd, Gd, Gd, Gd
+Dd, Dd, Dd, Dd, Dd, Dd, Rd, Gs, Wwg, Wwg, Wwg, Gs, Dd, Gd^Esd, Dd, Rd, Dd, Gd, Gd, Gd
+Dd^Esd, Dd^Fdy, Dd, Dd, Dd, Dd, Rd, Rd, Wwg, Wwg, Wwg, Gs, Dd^Vct, Dd, Dd^Vct, Rd, Dd, Dd, Dd, Gd
+Dd, Dd, Rd, Rd, Rd, Rd, Dd, Rd, Wwg, Wwrg, Wwg, Rd, Rd, Dd, Dd, Rd, Dd, Dd, Dd^Fdw, Gs^Fdw
+Dd, Dd, Rd, Dd, Dd, Dd, Dd^Edt, Rd^Edt, Wwg, Wwg, Wwf^Edt, Rd^Edt, Dd^Edt, Dd, Rd, 1 Rd, Dd, Dd^Vct, Dd^Fdy, Dd^Fdw
+Rd, Rd, Dd, Dd, Dd^Dr, Dd, Rd^Edt, Rd^Edt, Wwg, Wwg, Wwg, Rd^Edt, Rd^Edt, Dd^Edt, Rd, Dd^Zulf, Dd, Dd^Fdy, Dd, Dd^Fdy
+Dd, Dd, Dd, Dd^Esd, Dd, Dd, Dd^Edt, Rd^Edt, Rd^Edt, Wwg, Wwg^Edt, Rd^Edt, Rd^Edt, Dd^Edt, Rd^Edt, Dd, Dd, Dd, Dd^Esd, Dd
+Dd, Dd^Esd, Dd, Dd, Dd, Dd, Rd, Rd^Edt, Wwg, Wwg, Wwg, Rd^Edt, Rd^Edt, Dd^Edt, Dd, Rd, Dd, Dd^Fdw, Dd, Dd
+Dd, Dd, Dd, Dd, Rd, Rd^Vhcr, Rd, Rd^Edt, Wwg, Wwrg, Wwrg, Rd^Edt, Rd, Rd^Edt, Dd, Rd, Rd, Dd, Dd^Esd, Dd
+Qxe, Qxe, Qxe, Dd, Dd, Rd, Rd, Rd, Wwg, Wwrg, Wwrg, Wwrg, Rd, Rd, Dd, Dd, Rd, Dd, Dd, Dd^Es

@@ -1,0 +1,14 @@
+border_size=1
+usage=map
+
+_f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f
+_f, _f, _f, _f, _f, _f, _f, _f, Aa, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f, _f
+_f, _f, _f, Aa, _f, _f, Aa, Aa, Ms, Aa, Aa, _f, Aa, _f, Aa, _f, _f, _f, _f, _f
+_f, _f, _f, _f, _f, Aa, Aa, Aa, Ha, Ha, Ha, Aa, Ha, Aa, Aa, Aa, _f, _f, _f, _f
+_f, _f, Aa, Aa, Aa, Ha, Ha, Ms, Ms, Ms, Ms, Ms, Ms, Ms, Ha, Aa, Aa, _f, _f, _f
+_f, Aa, Spay, Spay, Ms, Ms, Ms, Ms, Spay, Spay^Vct, Ms, Ms, Ms, Ms, Ms, Ms, Aa, _f, _f, _f
+Aa, Aa, Ms, Spay, Spay, Spay, Spay, Spay, Cea, Spay, Cea, Ms, Ms, Ms, Ms, Ms, Ha, Aa, _f, _f
+Aa, Ha, Ha, Ms, Spay, Spay, Spay, Cea, Cea, Cea, Kea, Ms, Ms, Ms, Ms, Ms, Ms, Aa, _f, _f
+_f, Aa, Aa, Ms, Ms, Spay, Ms, Spay, Spay, Spay, Spay, Spay, Spay, Spay, Ms, Ms, Ha, Aa, _f, _f
+_f, _f, Aa, Ha, Ms, Ms, Ms, Ms, Spay, Spay^Vct, Spay, Spay, Spay, Spay, Ms, Ms, Ha, Aa, Aa, _f
+_f, _f, _f, Aa, Ms, Ms, Ms, Ms, Ms, Ms, Ms, Spay, Spay, Ms, Ms, Ms, Ha, Aa, _f, _f

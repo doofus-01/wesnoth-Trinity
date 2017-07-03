@@ -1,0 +1,15 @@
+border_size=1
+usage=map
+
+Rb, Rb, Aa, Aa, Koa, Aa, Aa, Ha, Ha, Ha, Ha, Ha, Ms, Ms, Ms, Ms, Ms, Ms
+Aa, Rb, Rb, Aa, Aa, Aa, Aa^Voa, Aa, Aa, Ha, Ha, Ha, Ha, Ms, Ha, Ms, Ms, Ms
+Aa, Aa, Aa, Rb, 1 Rb, Aa, Aa, Aa, Aa, Aa, Aa, Ha, Ha, Ha, Ha, Ms, Ms, Ms
+Aa, Koa, Aa, Aa, Aa, Rb, Rb, Coa, Aa, Aa, Aa, Aa, Aa^Fma, Aa^Fma, Ha, Ha, Ha, Ha
+Aa, Aa, Aa^Voa, Aa, Aa, Rb, Rb, Rb, Rb, Aa, Aa, Aa^Fma, Aa, Aa^Fma, Aa, Ha, Ha, Ha
+Aa, Aa, Aa, Aa, Aa, Coa, Aa, Rb, Rb, Aa, Aa, Aa, Aa, Aa^Fma, Aa^Fma, Aa, Aa, Ha
+Aa, Aa, Aa, Aa, Aa, Aa, Aa, Aa, Aa, Rb, Rb, Aa, Aa, Aa, Aa, Aa, Aa, Aa
+Aa, Aa, Aa, Aa, Aa^Fma, Aa, Aa, Aa, Aa, Aa, Rb, Aa, Aa, Aa, Aa, Aa, Aa, Aa
+Ha, Ha^Fpa, Ha^Fpa, Ha^Fpa, Aa^Fma, Aa^Fma, Aa^Fma, Aa, Aa, Aa, Aa, Rb, Rb, Aa, Aa, Aa, Aa, Aa
+Ha, Ha^Fpa, Aa, Aa^Fma, Aa^Fma, Aa, Aa^Fma, Aa, Aa, Aa, Aa, Rb, Rb, Rb, Rb, 2 Aa, Aa, Aa
+Ms, Ha, Ha, Aa, Aa, Aa, Aa, Aa, Aa, Aa, Aa, Aa, Aa, Rb, Rb, Rb, Rb, Aa
+Ms, Ms, Ha, Ha, Ha, Aa, Aa, Aa, Aa, Aa, Aa, Aa, Aa, Aa, Aa, Aa, Rb, Rb

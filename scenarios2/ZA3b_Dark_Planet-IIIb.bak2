@@ -1,0 +1,2128 @@
+#textdomain wesnoth-Trinity
+
+# to do:  1.  create&store Fear, Stupid, Cruel - done
+#	  2.  recruit anim for those three - done
+#	  3.  make 4 daemon units
+#	  4.  rift terrain -done -> though still needs some work
+#	  5.  smoke terrain - done
+
+[scenario]
+    id="Dark_Planet_3b"
+    name= _ "Dark Planet (III)"
+    map_data="{~add-ons/Trinity/maps/Dark_Planet_Finale.map}"
+    next_scenario=Epilogue
+    victory_when_enemies_defeated=no
+    turns=-1
+    #    {TURNS 85 70 60}
+
+    [music]
+        name="legends_of_the_north.ogg"
+    [/music]
+
+    {BMR_STORE_SIDE 1}
+    {BMR_STORE_SIDE 3}
+#    {BMR_STORE_SIDE 5}
+    {BMR_RESTORE_SIDE 1}
+    {BMR_RESTORE_SIDE 3}
+    {TRINITY_DP_SCHEDULE}
+    #    {TRI_RADIOACTIVE}
+
+    [story]
+        [part]
+            story= _ "Haldrad's forces escaped from Seth's lair via a back chamber.  Haldrad was pleased with how his forces had fought the unfamiliar enemy, but had an itching feeling that though he had won that battle, the war was not over.  He hoped Dardrus, and his fiery new companion Bresda, were having success in their assault..."
+            [background_layer]
+                image="story/Trinity_cave2.jpg"
+            [/background_layer]
+        [/part]
+        [part]
+            story= _ "Dardrus, Bresda, and the sailors fled down the metal hallways, well aware that the rising ambient rumble, as well as the occasional siren or hissing pipe, was a harbinger of coming destruction.  They reached the entrance and fled back to the surface, where they were confronted with an odd sight."
+            [background_layer]
+                image="story/Trinity_cave-metal.jpg"
+            [/background_layer]
+        [/part]
+    [/story]
+
+    ###############################################
+    # Sides
+    ###############################################
+    [side]
+        type=Spearman
+        id=Fooby
+        name= _ "Fooby"
+        side=1
+        canrecruit=yes
+        fog=no
+        shroud=no
+        controller=human
+        scroll_to_leader=no
+        recruit=""
+        recall_cost=10
+        village_gold=2
+        village_support=2
+        {INCOME 10 7 4}
+        {GOLD 390 270 160}
+        team_name=Humans
+        #	[unit]
+        #	type=Primeval Nemesis2
+        #	id=Nemesis
+        #	profile=portraits/nemesis_2.png
+        #	name=Nemesis
+        #	x,y=63,59
+        #	facing=nw
+        #	[/unit]
+    [/side]
+
+    [side]
+        type=Trinity Avatar
+        id=Avatar
+        name= _ "The Destroyer"
+        side=2
+        canrecruit=yes
+        controller=ai
+        fog=no
+        shroud=no
+        recruit=""
+        extra_recruit="Yak,Horse,Ram,Timber Wolf,Tomb Dancer,Tomb Guard,Spirit Dove"
+        {INCOME 7 10 14}
+        {GOLD 350 450 550}
+        team_name=Evil
+        [ai]
+            [goal]
+                name=target_location
+                [criteria]
+                    x=2,12,47,32
+                    y=57,57,4,58
+                [/criteria]
+                value=6
+            [/goal]
+        [/ai]
+    [/side]
+
+    [side]
+        type=Spearman
+        id=Fooby
+        name= _ "Fooby"
+        side=3
+        canrecruit=yes
+        controller=human
+        fog=no
+        shroud=no
+        recruit=""
+        recall_cost=10
+        village_gold=2
+        village_support=2
+        {INCOME 12 8 4} # needed?
+        {GOLD 180 160 120} # not sure this matters
+        team_name=Humans
+    [/side]
+
+    [side]
+        type=Tri_Cyan_Cyborg_Flyer
+        id=Tristien
+        name= _ "General Tristien"
+        side=4
+        canrecruit=yes
+        controller=ai
+        fog=no
+        shroud=no
+        recruit="Tri_Mech_Drone,Tri_Mech_Cyborg,Tri_Mech_Scout,Mage,Tri_Blue_Mage,Blue_Drake"
+        [unit]
+            type=Mechanical Dragon
+            #            type=Mech_Seth Dragon2
+            id=Mech_D
+            name=Mechanical Dragon
+            x,y=39,47
+        [/unit]
+        [unit]
+            type=Tri_Mech_Drone
+            x,y=36,46
+            facing=se
+        [/unit]
+        [unit]
+            type=Tri_Mech_Drone
+            x,y=38,45
+            facing=sw
+        [/unit]
+        [unit]
+            type=Tri_Mech_Cyborg_Captain
+            id=Mech_Captain
+            x,y=57,56
+            facing=se
+        [/unit]
+        [unit]
+            type=Tri_Mech_Android
+            x,y=55,35
+            facing=se
+        [/unit]
+        [unit]
+            type=Tri_Mech_Android
+            x,y=37,47
+            facing=se
+        [/unit]
+        [unit]
+            type=Tri_Mech_Defender
+            x,y=33,29
+            facing=sw
+        [/unit]
+        [unit]
+            type=Tri_Mech_Tank
+            x,y=55,57
+            facing=se
+        [/unit]
+        [unit]
+            type=Tri_Mech_Cyborg
+            x,y=58,56
+            facing=se
+        [/unit]
+        [unit]
+            type=Tri_Mech_Cyborg
+            x,y=57,57
+            facing=se
+        [/unit]
+        {INCOME 7 10 14}
+        {GOLD 350 450 550}
+        team_name=Evil
+        # this will be modified later on
+        [ai]
+            [goal]
+                name=target_location
+                [criteria]
+                    x,y=68,58-63
+                [/criteria]
+                value=6
+            [/goal]
+            [goal]
+                name=target
+                [criteria]
+                    id=Haldrad
+                [/criteria]
+                value=6
+            [/goal]
+        [/ai]
+        [village]
+            x,y=25,32
+        [/village]
+        [village]
+            x,y=33,32
+        [/village]
+        [village]
+            x,y=23,27
+        [/village]
+        [village]
+            x,y=35,27
+        [/village]
+    [/side]
+
+    [side]
+        type=Primeval Nemesis2
+        id=Nemesis
+        name=Nemesis
+        x,y=63,59
+        facing=nw
+        side=5
+        canrecruit=yes
+        controller=human
+        fog=no
+        shroud=no
+        recruit="Tri_Bronze_Bird"
+        recall_cost=10
+        village_gold=2
+        village_support=2
+        {INCOME 12 8 4}
+        {GOLD 380 310 200}
+        team_name=Humans
+    [/side]
+
+    [event]
+        name=prestart
+        [objectives]
+            side=1
+            [objective]
+                condition=win
+                description=_ "Defeat Enemy Leaders"
+            [/objective]
+            [objective]
+                condition=lose
+                description=_ "Death of Haldrad or allied heroes"
+            [/objective]
+            [objective]
+                condition=lose
+                description=_ "Enemy captures Sky Mountain (the snow terrain region in southeast corner)"
+            [/objective]
+            #            [objective]
+            #                condition=lose
+            #                description=_ "Time runs out"
+            #                show_turn_counter=yes
+            #            [/objective]
+            note= _"These last scenarios are under construction.  This one is due for a major revision, and is probably not totally playable.  However, the start-of-scenario save can be used to play the future versions that are complete."
+        [/objectives]
+        [objectives]
+            side=3
+            [objective]
+                condition=win
+                description=_ "Defeat Enemy Leaders"
+            [/objective]
+            [objective]
+                condition=lose
+                description=_ "Death of Bresda or Dardrus"
+            [/objective]
+            [objective]
+                condition=lose
+                description=_ "Enemy captures Sky Mountain (the snow terrain region in southeast corner)"
+            [/objective]
+            note= _"These last scenarios are under construction.  This one is due for a major revision, and is probably not totally playable.  However, the start-of-scenario save can be used to play the future versions that are complete."
+        [/objectives]
+        [objectives]
+            side=5
+            [objective]
+                condition=win
+                description=_ "Defeat Enemy Leaders"
+            [/objective]
+            [objective]
+                condition=lose
+                description=_ "Enemy captures Sky Mountain (the snow terrain region in southeast corner)"
+            [/objective]
+            note= _"These last scenarios are under construction.  This one is due for a major revision, and is probably not totally playable.  However, the start-of-scenario save can be used to play the future versions that are complete."
+        [/objectives]
+        [recall]
+            id=Ponce
+            x,y=16,13
+        [/recall]
+        [recall]
+            id=Lyron
+            x,y=18,12
+        [/recall]
+        [store_unit]
+            [filter]
+                id=Avatar
+            [/filter]
+            kill=yes
+            variable=avatar
+        [/store_unit]
+        [store_unit]
+            [filter]
+                id=Fear
+            [/filter]
+            kill=yes
+            variable=fear
+        [/store_unit]
+        [store_unit]
+            [filter]
+                id=Stupid
+            [/filter]
+            kill=yes
+            variable=stupid
+        [/store_unit]
+        [store_unit]
+            [filter]
+                id=Cruel
+            [/filter]
+            kill=yes
+            variable=cruel
+        [/store_unit]
+        # where did these folks come from?
+        [kill]
+            [and]
+                side=5
+                x,y=recall,recall
+            [/and]
+        [/kill]
+        [kill]
+            [and]
+                side=4
+                x,y=recall,recall
+            [/and]
+        [/kill]
+        [set_recruit]
+            side=4
+            recruit="Tri_Mech_Drone,Tri_Mech_Cyborg,Tri_Mech_Scout"
+            #        recruit="Tri_Mech_Drone,Tri_Mech_Cyborg,Tri_Mech_Scout,Mage,Tri_Blue_Mage,Blue_Drake"
+        [/set_recruit]
+        [teleport]
+            [filter]
+                id=Tristien
+            [/filter]
+            x,y=29,18
+            animate=no
+        [/teleport]
+    [/event]
+
+    [event]
+        name=start
+        # testing###########
+        #        [unit]
+        #        type=Trinity Fear
+        #        x,y=11,41
+        #	side=2
+        #	animate=yes
+        #        [/unit]
+        #        [unit]
+        #        type=Trinity Stupid
+        #        x,y=11,42
+        #	side=2
+        #	animate=yes
+        #        [/unit]
+        #        [unit]
+        #        type=Trinity Cruel
+        #        x,y=11,43
+        #	side=2
+        #	animate=yes
+        #        [/unit]
+        ##########
+        {MOVE_UNIT (id=Haldrad) 18 21}
+        {MODIFY_UNIT (id=Haldrad) facing se}
+        [message]
+            speaker=Haldrad
+            message=_"What have we here?"
+        [/message]
+        [scroll_to]
+            x,y=33,29
+        [/scroll_to]
+        [delay]
+            time=200
+        [/delay]
+        [scroll_to]
+            x,y=58,57
+        [/scroll_to]
+        [delay]
+            time=200
+        [/delay]
+        [message]
+            speaker=Tristien
+            message=_"What's the hold-up?!"
+        [/message]
+        [message]
+            speaker=Mech_Captain
+            message=_"There is ... an ... obstacle..."
+        [/message]
+        [message]
+            speaker=Nemesis
+            message=_"*(snort!)* I'm more than an obstacle...  I am a <b><i>God</i>!</b>"
+        [/message]
+        [message]
+            speaker=Bresda
+            message=_"Isht- I mean- Nemesis!  You're here!"
+        [/message]
+        {MOVE_UNIT (id=Dardrus) 66 45}
+        {MODIFY_UNIT (id=Dardrus) facing sw}
+        [message]
+            speaker=Dardrus
+            message=_"Prince!  We need to leave this place!  Right now!"
+        [/message]
+        [message]
+            speaker=Bresda
+            message=_"We've destroyed the nest of the machines, but, ah, there have been complications."
+        [/message]
+        [message]
+            speaker=Nemesis
+            message=_"Bresda, Dardrus ...  I don't know how you got here, but the Sky Mountain is the only way I know of off this rock, and we must defend it at all costs.  However, before we leave, we must destroy the evil spirit that calls himself 'Seth'."
+        [/message]
+        [message]
+            speaker=Haldrad
+            message=_"We've defeated that evil lord!  He won't be causing us any more trouble."
+        [/message]
+        [message]
+            speaker=Nemesis
+            message=_"I find it hard to believe Seth could fall to the likes of you..."
+        [/message]
+        [delay]
+            time=1000
+        [/delay]
+        [message]
+            speaker=Nemesis
+            message=_"But I've seen powerful gods fall to inferior beings because of the vice of pride.  Very well, let's get out of here.  Make your way to the Sky Mountain."
+        [/message]
+        [music]
+            name=the_dangerous_symphony.ogg
+            append=yes
+            immediate=no
+        [/music]
+        [music]
+            name=into_the_shadows.ogg
+            append=yes
+            immediate=no
+        [/music]
+        [message]
+            speaker=Tristien
+            message=_"Stop them!"
+        [/message]
+        [message]
+            speaker=Mech_D
+            message=_"<i>Acquiring targets...</i>"
+        [/message]
+#        [message]
+#            speaker=narrator
+#            message=_"This scenario is due for a major revision, and it is probably not possible to win it.  The start-of-scenario save Dark Planet (III) (the one that's not autosave or replay) can be used in future versions to pick this back up when it is completed."
+#        [/message]
+    [/event]
+
+    [event]
+        name=turn 2
+        [unit]
+            side=4
+            type=Tri_Mech_Drone
+            x,y=51,36
+        [/unit]
+        [unit]
+            side=4
+            type=Tri_Mech_Defender
+            x,y=50,35
+        [/unit]
+        [unit]
+            side=4
+            id=Mech1
+            type=Tri_Mech_Sentinel
+            x,y=49,36
+        [/unit]
+        [unit]
+            side=4
+            type=Tri_Mech_Defender
+            x,y=50,36
+        [/unit]
+        [message]
+            speaker=Mech1
+            message=_"Core has been compromised!  Link is down!"
+        [/message]
+        [message]
+            speaker=Tristien
+            message=_"...  Confirmed!  Link is down!  All units, attack the enemy, continue to make your way to the foreign mountain!  It may be our only escape!"
+        [/message]
+        [message]
+            speaker=Mech_D
+            message=_"Orders confirmed..."
+        [/message]
+        #	[message]
+        #	speaker=Tristien
+        #	message=_"Once we reach the mountain, we'll need to set up a new core..."
+        #	[/message]
+    [/event]
+
+    [event]
+        name=turn 3
+        [unit]
+            side=4
+            type=Tri_Mech_Drone
+            x,y=51,36
+        [/unit]
+        [unit]
+            side=4
+            type=Tri_Mech_Defender
+            x,y=50,35
+        [/unit]
+        [unit]
+            side=4
+            id=Mech2
+            type=Tri_Mech_Sentinel
+            x,y=49,36
+        [/unit]
+        [unit]
+            side=4
+            type=Tri_Mech_Defender
+            x,y=50,36
+        [/unit]
+        [message]
+            speaker=Mech2
+            message=_"We are the last, the others will not make it!"
+        [/message]
+        {QUAKE "rumble.ogg"}
+        [message]
+            speaker=Tristien
+            message=_"All units, cut standard transmissions and switch to local link only."
+        [/message]
+        [message]
+            speaker=Bresda
+            message=_"He says such strange things..."
+        [/message]
+        {FLASH_RED (
+            [replace_map]
+                map="{~add-ons/Trinity/maps/Dark_Planet_Finale2.map}"
+            [/replace_map]
+            {QUAKE "rumble.ogg"}
+        )}
+        [message]
+            speaker=Dardrus
+            message=_"What is that?"
+        [/message]
+        [scroll_to]
+            x,y=28,3
+        [/scroll_to]
+        [delay]
+            time=820
+        [/delay]
+    [/event]
+
+    [event]
+        name=turn 4
+        {FLASH_WHITE (
+            [delay]
+                time=500
+            [/delay]
+        )}
+        {QUAKE "rumble.ogg"}
+        {FLASH_RED (
+            [replace_map]
+                map="{~add-ons/Trinity/maps/Dark_Planet_Finale3.map}"
+            [/replace_map]
+            [message]
+                id=Mech2
+                message=_"System flood...  cannot ..."
+            [/message]
+            [kill]
+                id=Mech2
+                animate=yes
+            [/kill]
+            [music]
+                name=FranticSketch.ogg
+                append=no
+                immediate=yes
+            [/music]
+            [music]
+                name=northerners.ogg
+                append=yes
+                immediate=no
+            [/music]
+            [music]
+                name=siege_of_laurelmor.ogg
+                append=yes
+                immediate=no
+            [/music]
+        )}
+        [message]
+            speaker=Tristien
+            message=_"I said to <i>sever standard transmissions</i>!  The core is on fire, anyone linked to it will be overwhelmed!"
+        [/message]
+    [/event]
+
+    [event]
+        name=turn 5
+        [unstore_unit]
+            variable=avatar
+        [/unstore_unit]
+        [music]
+            name=weight_of_revenge.ogg
+            append=yes
+            immediate=yes
+        [/music]
+        [message]
+            speaker=Avatar
+            message=_"General Tristien... I hadn't expected you to still be here."
+        [/message]
+        [message]
+            speaker=Tristien
+            message=_"Lord Seth, is that you?"
+        [/message]
+        [message]
+            speaker=Avatar
+            message=_"In a sense, yes..."
+        [/message]
+        [message]
+            speaker=Tristien
+            message=_"They've damaged the core, we are unstable...  Can you help?"
+        [/message]
+        [message]
+            speaker=Avatar
+            message=_"We no longer need the core, Tristien.  You shall become part of something much greater than you have ever known, if only we can take what we need from these invaders."
+        [/message]
+        [message]
+            speaker=Tristien
+            message=_"I see...  What do I need to do?"
+        [/message]
+        [message]
+            speaker=Avatar
+            message=_"Carry on in your fight to capture the ice mountain, and believe in me."
+        [/message]
+        [message]
+            speaker=Tristien
+            message=_" ...  "
+        [/message]
+#ifdef __UNUSED__
+        [delay]
+            time=1200
+        [/delay]
+        [message]
+            speaker=Tristien
+            message=_"(Oh, Creator, what have I done? ...)"
+        [/message]
+        [delay]
+            time=1200
+        [/delay]
+        [message]
+            speaker=Tristien
+            message=_"Attention all units!  We've been mislead by lies and false promises!  The enemy are the ghosts and phantoms, not the invaders!  Change targets!"
+        [/message]
+        [message]
+            speaker=Mech_D
+            message=_"Understood!  Acquiring <i><b>new</b></i> targets..."
+        [/message]
+        [modify_side]
+            side=4
+            team_name=Mechs
+        [/modify_side]
+        [modify_ai]
+            side=4
+            action=delete
+            path=goal[*]
+        [/modify_ai]
+        # move towards side 2, especially leaders
+        [modify_ai]
+            side=4
+            action=add
+            path=goal
+            [goal]
+                name=target
+                [criteria]
+                    side=2
+                [/criteria]
+                value=6
+            [/goal]
+        [/modify_ai]
+        [modify_ai]
+            side=4
+            action=add
+            path=goal
+            [goal]
+                name=target
+                [criteria]
+                    id=Avatar,Stupid,Fear,Cruel
+                [/criteria]
+                value=8
+            [/goal]
+        [/modify_ai]
+        # only attack side 2
+        [modify_ai]
+            side=4
+            action=add
+            path=aspect[attacks].facet[]
+            [facet]
+                invalidate_on_gamestate_change=yes
+                #            [filter_own]
+                #                type=
+                #            [/filter_own]
+                [filter_enemy]
+                    side=2
+                [/filter_enemy]
+            [/facet]
+        [/modify_ai]
+#endif
+        [set_variable]
+            name=weaknesses
+            value=0
+        [/set_variable]
+    [/event]
+
+#ifdef __UNUSED__
+
+    ##############################################
+    # Stupidity, Fear, and Cruelty are summoned, and as they are defeated, the Avatar becomes more powerful
+    # the 'weaknesses' values may need revision, depending upon how this ends up firing
+    #############################################
+
+    [event]
+        name=rift_event
+        first_time_only=no
+        # find a useable terrain next to the purple chasms
+        [store_locations]
+            variable=spawn_points
+            y=13-68
+            terrain=Dsmz,Uu,Urb,Uh,Urf,Ur
+            [filter_adjacent_location]
+                terrain=Qxuz,*^Ryft
+            [/filter_adjacent_location]
+        [/store_locations]
+        [set_variable]
+            name=s_p_index
+            rand=0..$spawn_points.length
+        [/set_variable]
+        [set_variable]
+            name=x_random
+            value=$spawn_points[$s_p_index].x
+        [/set_variable]
+        [set_variable]
+            name=y_random
+            value=$spawn_points[$s_p_index].y
+        [/set_variable]
+        # older method
+# ifdef __UNUSED__
+        # find a space that is not in a wall, the fire, or a keep
+        [while]
+            [variable]
+                name=t_check
+                not_equals=yes
+            [/variable]
+            [do]
+                [set_variable]
+                    name=x_random
+                    rand=1..68
+                [/set_variable]
+                [set_variable]
+                    name=y_random
+                    rand=8..68
+                [/set_variable]
+                [if]
+                    [have_location]
+                        x,y=$x_random|,$y_random|
+                        terrain=Dsmz,Uu,Urb,Uh,Urf,Ur
+                    [/have_location]
+                    [then]
+                        [set_variable]
+                            name=t_check
+                            value=yes
+                        [/set_variable]
+                    [/then]
+                [/if]
+            [/do]
+        [/while]
+# endif
+        # changing forming daemons into random type - mostly type 1 & 2
+        [set_variable]
+            name=t_check
+            rand=1,2,1,2,3,4,2,5,1,2,3,4,5,1,2
+        [/set_variable]
+        # testing
+        #		[message]
+        #		speaker=narrator
+        #		message=_"new type= Tri_Daemon$t_check|"
+        #		[/message]
+        #		    {TRANSFORM_UNIT (type=Tri_Daemon0) "Tri_Daemon$t_check|"}
+        [transform_unit]
+            type=Tri_Daemon0
+            transform_to=Tri_Daemon$t_check|
+        [/transform_unit]
+        [heal_unit]
+            [filter]
+                [filter_location]
+                    terrain=*^Ryft
+                [/filter_location]
+            [/filter]
+        [/heal_unit]
+        # making new rift and forming baby daemon
+        # testing
+        #		[message]
+        #		speaker=narrator
+        #		message=_"x,y= $x_random|,$y_random|"
+        #		[/message]
+        [terrain]
+            terrain=Dsmz^Ryft
+            layer=overlay
+            x,y=$x_random|,$y_random|
+        [/terrain]
+        [unit]
+            type=Tri_Daemon0
+            x,y=$x_random|,$y_random|
+            side=2
+        [/unit]
+        [scroll_to]
+            x,y=$x_random|,$y_random|
+        [/scroll_to]
+        [delay]
+            time=150
+        [/delay]
+        {CLEAR_VARIABLE t_check}
+        {CLEAR_VARIABLE x_random}
+        {CLEAR_VARIABLE y_random}
+        {CLEAR_VARIABLE spawn_points}
+    [/event]
+#endif
+
+#define TRI_TELEPORT_CLEAR_LOC X Y
+    [if]
+        [variable] # check that a location hasn't already been assigned
+            name=tele_x
+            equals=0
+        [/variable]
+        [not]
+            [have_unit] # check that the hex is clear
+                x,y={X},{Y}
+            [/have_unit]
+        [/not]
+        [then]
+            [set_variable]
+                name=tele_x
+                value={X}
+            [/set_variable]
+            [set_variable]
+                name=tele_y
+                value={Y}
+            [/set_variable]
+        [/then]
+    [/if]
+#enddef
+
+#define TRI_TELEPORT_AVATAR ID
+
+    [set_variable]
+        name=tele_x
+        value=0
+    [/set_variable]
+    [set_variable]
+        name=tele_y
+        value=0
+    [/set_variable]
+    {TRI_TELEPORT_CLEAR_LOC 25 29}
+    {TRI_TELEPORT_CLEAR_LOC 33 29}
+    {TRI_TELEPORT_CLEAR_LOC 37 47}
+    {TRI_TELEPORT_CLEAR_LOC 29 18}
+    {TRI_TELEPORT_CLEAR_LOC 8 61}
+    [if]
+        [variable] # if all keeps were occupied, (and we don't want to check that this fallback hex is clear)
+            name=tele_x
+            equals=0
+        [/variable]
+        [then]
+            [set_variable]
+                name=tele_x
+                value=34
+            [/set_variable]
+            [set_variable]
+                name=tele_y
+                value=39
+            [/set_variable]
+            [teleport]
+                [filter]
+                    id={ID}
+                [/filter]
+                x,y=$tele_x|,$tele_y|
+                animate=yes
+            [/teleport]
+            [store_unit]
+                [filter]
+                    id={ID}
+                [/filter]
+                variable=tele_ava
+                kill=no
+            [/store_unit]
+            # make a temporary castle
+            [terrain]
+                x,y=$tele_ava.x|,$tele_ava.y|
+                terrain=Uu^Kov
+                layer=overlay
+            [/terrain]
+            [terrain]
+                x=$($tele_ava.x| + 1)
+                y=$tele_ava.y|
+                terrain=Uu^Cov
+                layer=overlay
+            [/terrain]
+            [terrain]
+                x=$tele_ava.x|
+                y=$($tele_ava.y| + 1)
+                terrain=Uu^Cov
+                layer=overlay
+            [/terrain]
+            [terrain]
+                x=$($tele_ava.x| - 1)
+                y=$tele_ava.y|
+                terrain=Uu^Cov
+                layer=overlay
+            [/terrain]
+            [terrain]
+                x=$tele_ava.x|
+                y=$($tele_ava.y| - 1)
+                terrain=Uu^Cov
+                layer=overlay
+            [/terrain]
+            [terrain]
+                x=$($tele_ava.x| + 1)
+                y=$($tele_ava.y| + 1)
+                terrain=Uu^Cov
+                layer=overlay
+            [/terrain]
+            [terrain]
+                x=$($tele_ava.x| - 1)
+                y=$($tele_ava.y| - 1)
+                terrain=Uu^Cov
+                layer=overlay
+            [/terrain]
+            [event] # breaking down the temp castle
+                name=exit_hex
+                [filter]
+                    id={ID}
+                    x,y=$tele_ava.x|,$tele_ava.y|
+                [/filter]
+                [terrain]
+                    terrain=Uu
+                    [and]
+                        terrain=*^Kov,*^Cov
+                    [/and]
+                    layer=overlay
+                [/terrain]
+            [/event]
+        [/then]
+        [else]
+            [teleport]
+                [filter]
+                    id={ID}
+                [/filter]
+                x,y=$tele_x|,$tele_y|
+                animate=yes
+            [/teleport]
+        [/else]
+    [/if]
+#enddef
+
+    [event]
+        name=side 2 turn
+        first_time_only=no
+        [filter_condition]
+            [variable]
+                name=weaknesses
+                equals=0
+            [/variable]
+        [/filter_condition]
+        {CLEAR_VARIABLE stupid_comes}
+        [set_variable]
+            name=weaknesses
+            add=1
+        [/set_variable]
+        [unit]
+            side=2
+            type=Trinity Stupid
+            x,y=29,5
+            id=Stupid
+            name="Stupidity"
+            canrecruit=yes
+            extra_recruit="Mudcrawler,Thug,Ruffian,Ogre,Tower Coconut,Tower Pineapple"
+            animate=yes
+            [modifications]
+                {TRI_TRAIT_ELEMENTAL_BIG}
+                {TRAIT_STRONG}
+            [/modifications]  
+        [/unit]
+        [message]
+            speaker=Avatar
+            message=_"Immovable Stupidity, show these people your power!"
+        [/message]
+        [message]
+            speaker=Stupid
+            message="Guaha Aaaah!"
+        [/message]
+        {TRI_TELEPORT_AVATAR Stupid}
+        [gold]
+            amount=20
+            side=2
+        [/gold]
+        #	[teleport]
+        #	    [filter]
+        #		id=Stupid
+        #	    [/filter]
+        #	    x,y=29,18
+        #	    animate=yes
+        #	[/teleport]
+        [event]
+            name=recruit
+            first_time_only=no
+            [filter]
+                side=2
+                type="Mudcrawler,Thug,Ruffian,Ogre,Tower Coconut,Tower Pineapple"
+            [/filter]
+            [unit_overlay]
+                id=$unit.id
+                image=halo/the-destroyer-spark4.png~CS(30,-40,30)~O(0.6)
+            [/unit_overlay]
+        [/event]
+        [event]
+            name=die
+            [filter]
+                id=Stupid
+            [/filter]
+            [set_variable]
+                name=weaknesses
+                add=1
+            [/set_variable]
+            [message]
+                speaker=Avatar
+                message=_"Hahaha..."
+            [/message]
+            [message]
+                speaker=Dardrus
+                message=_"(I wonder what it finds so amusing...)"
+            [/message]
+            {TRANSFORM_UNIT (id=Avatar) "Trinity Avatar2"}
+	    [object]
+		[filter]
+		    id=Avatar
+		[/filter]
+		silent=yes
+		[effect]
+		    [filter]
+			id=Avatar
+		    [/filter]
+		    apply_to=image_mod
+		    replace=~SCALE(90,180)
+		[/effect]
+	    [/object]
+            [heal_unit]
+                [filter]
+                    id=Avatar
+                [/filter]
+                animate=yes
+            [/heal_unit]
+        [/event]
+    [/event]
+
+    [event]
+        name=side 2 turn
+        first_time_only=no
+        [filter_condition]
+            [variable]
+                name=weaknesses
+                equals=2 # it was 0, then changed to 1 as soon as Stupid showed up, it will be two when he dies
+            [/variable]
+        [/filter_condition]
+        #	{CLEAR_VARIABLE stupid_comes}
+        [set_variable]
+            name=weaknesses
+            add=1 # now it's 3
+        [/set_variable]
+        [unit]
+            side=2
+            type=Trinity Fear
+            x,y=29,5
+            id=Fear
+            name="Fear"
+            canrecruit=yes
+            extra_recruit="Ghost,Walking Corpse,Skeleton,Wraith,Phantom Unease,Phantom Horseman"
+            animate=yes
+            [modifications]
+                {TRI_TRAIT_ELEMENTAL_BLUE}
+                {TRAIT_QUICK}
+            [/modifications]
+        [/unit]
+        [message]
+            speaker=Avatar
+            message=_"Paralyzing Fear, show these people your power!"
+        [/message]
+        [message]
+            speaker=Fear
+            message="*(whisper...)*"
+        [/message]
+        {TRI_TELEPORT_AVATAR Fear}
+        [gold]
+            amount=110
+            side=2
+        [/gold]
+        #	[teleport]
+        #	    [filter]
+        #		id=Fear
+        #	    [/filter]
+        #	    x,y=33,29
+        #	    animate=yes
+        #	[/teleport]
+        [event]
+            name=recruit
+            first_time_only=no
+            [filter]
+                side=2
+                type="Ghost,Walking Corpse,Skeleton,Wraith,Phantom Unease,Phantom Horseman"
+            [/filter]
+            [unit_overlay]
+                id=$unit.id
+                image=halo/the-destroyer-spark4.png~CS(30,-40,30)~O(0.6)
+            [/unit_overlay]
+        [/event]
+        [event]
+            name=die
+            [filter]
+                id=Fear
+            [/filter]
+            [set_variable]
+                name=weaknesses
+                add=1 # now it's 4
+            [/set_variable]
+            [message]
+                speaker=Avatar
+                message=_"Hahaha..."
+            [/message]
+            [message]
+                speaker=Ponce
+                message=_"The leading daemon is getting stronger as we kill off its minions."
+            [/message]
+            {TRANSFORM_UNIT (id=Avatar) "Trinity Avatar3"}
+	    [object]
+		[filter]
+		    id=Avatar
+		[/filter]
+		silent=yes
+		[effect]
+		    [filter]
+			id=Avatar
+		    [/filter]
+		    apply_to=image_mod
+		    replace=~SCALE(100,210)
+		[/effect]
+	    [/object]
+            [heal_unit]
+                [filter]
+                    id=Avatar
+                [/filter]
+                animate=yes
+            [/heal_unit]
+        [/event]
+    [/event]
+
+    [event]
+        # testing
+        # #ifdef __UNUSED__
+        name=side 2 turn
+        first_time_only=no
+        [filter_condition]
+            [variable]
+                name=weaknesses
+                equals=4
+            [/variable]
+        [/filter_condition]
+        # #endif
+        #	name=turn 2
+        #
+        [set_variable]
+            name=weaknesses
+            add=1
+        [/set_variable]
+        [unit]
+            side=2
+            type=Trinity Cruel
+            x,y=29,5
+            id=Cruel
+            name="Cruelty"
+            canrecruit=yes
+            extra_recruit="Orcish Grunt,Arif,Heavy Infantryman,Cavalryman,Goblin Pillager"
+            animate=yes
+            [modifications]
+                {TRI_TRAIT_ELEMENTAL_HALO}
+                {TRAIT_RESILIENT}
+            [/modifications]  
+        [/unit]
+        [message]
+            speaker=Avatar
+            message=_"Crushing Cruelty, show these people your power!"
+        [/message]
+        [message]
+            speaker=Cruel
+            message="I'm going to enjoy this..."
+        [/message]
+        {TRI_TELEPORT_AVATAR Cruel}
+        [gold]
+            amount=110
+            side=2
+        [/gold]
+        #	[teleport]
+        #	    [filter]
+        #		id=Cruel
+        #	    [/filter]
+        #	    x,y=25,29
+        #	    animate=yes
+        #	[/teleport]
+        [event]
+            name=recruit
+            first_time_only=no
+            [filter]
+                side=2
+                type="Orcish Grunt,Arif,Heavy Infantryman,Cavalryman,Goblin Pillager"
+            [/filter]
+            [unit_overlay]
+                id=$unit.id
+                image=halo/the-destroyer-spark4.png~CS(30,-40,30)~O(0.6)
+            [/unit_overlay]
+        [/event]
+        [event]
+            name=die
+            [filter]
+                id=Cruel
+            [/filter]
+            [set_variable]
+                name=weaknesses
+                add=1 # now it's 5
+            [/set_variable]
+            [message]
+                speaker=Avatar
+                message=_"Hahaha..."
+            [/message]
+            {TRANSFORM_UNIT (id=Avatar) "Trinity Avatar4"}
+            [object]
+                [filter]
+                    id=Avatar
+                [/filter] 
+                silent=yes
+                [effect]    
+                    [filter]
+                        id=Avatar
+                    [/filter]
+                    apply_to=image_mod
+                    replace=~BLIT(units/avatar-eyes.png)~BLEND(90,70,200,0.2)~SCALE(120,230)
+                [/effect]
+               [effect]
+                    [filter]
+                        id=Avatar
+                    [/filter]
+                    apply_to=halo
+                    halo=halo/the-destroyer-spark4.png~CS(0,-50,60)~SCALE(255,255)
+                [/effect]
+            [/object]
+            [heal_unit]
+                [filter]
+                    id=Avatar
+                [/filter]
+                animate=yes
+            [/heal_unit]
+            [music]
+                name=gathering_storm.ogg
+                immediate=yes
+                append=no
+            [/music]
+            [message]
+                speaker=Haldrad
+                message=_"Uh-oh, we may have made a mistake."
+            [/message]
+            [message]
+                speaker=Avatar
+                message=_"You certainly have!  Now you're mine!"
+            [/message]
+            [message]
+                speaker=Tristien
+                message=_"*<i>mutters under breath</i>*"
+            [/message]
+            [event]
+                name=new turn
+                first_time_only=no
+                [set_variable]
+                    name=r_e_number
+                    rand=1,1,1,2,2,3
+                [/set_variable]
+                [while]
+                    [variable]
+                        name=r_e_number
+                        greater_than=0
+                    [/variable]
+                    [do]
+                        [fire_event]
+                            name=rift_event
+                        [/fire_event]
+                        [set_variable]
+                            name=r_e_number
+                            add=-1
+                        [/set_variable]
+                    [/do]
+                [/while]
+            [/event]
+
+            # Tristien goes after Avatar
+            [modify_ai]
+                side=4
+                action=add
+                path=aspect[attacks].facet[]
+                [facet]
+                    invalidate_on_gamestate_change=yes
+                    [filter_own]
+                        id=Tristien
+                    [/filter_own]
+                    [filter_enemy]
+                        id=Avatar
+                    [/filter_enemy]
+                [/facet]
+            [/modify_ai]
+            [modify_ai]
+                side=4
+                action=add
+                path=aspect[leader_ignores_keep].facet[]
+                [facet]
+                    # not sure if this is needed  ->      	    invalidate_on_gamestate_change=yes
+                    value=yes
+                [/facet]
+            [/modify_ai]
+            [modify_ai]
+                side=4
+                action=add
+                path=aspect[leader_aggression].facet[]
+                [facet]
+                    # not sure if this is needed  ->      	    invalidate_on_gamestate_change=yes
+                    value=1
+                [/facet]
+            [/modify_ai]
+        [/event]
+    [/event]
+
+    ####################################
+
+    [event]
+        name=side 4 turn
+        first_time_only=no
+        [filter_condition]
+            #	    [have_unit]
+            #		type=Trinity Avatar4
+            #	    [/have_unit]
+            [variable] # so Fear is defeated, Cruelty may not be
+                name=weaknesses
+                greater_than=4
+            [/variable]
+            [and]
+                [have_unit]
+                    id=Tristien
+                [/have_unit]
+            [/and]
+        [/filter_condition]
+        [store_unit]
+            [filter]
+                id=Tristien
+            [/filter]
+            variable=tristien
+            kill=no
+        [/store_unit]
+        [if]
+            [variable]
+                name=tristien.hitpoints
+                greater_than=190
+            [/variable]
+            [then]
+                [set_variable]
+                    name=tristien.hitpoints
+                    add=-50
+                [/set_variable]
+		{FLASH_RED (
+                [unstore_unit]
+                    variable=tristien
+                    find_vacant=no
+                    text=50
+                    {COLOR_HARM}
+                [/unstore_unit]
+                [message]
+                    speaker=Tristien
+                    message=_"Argh, what are you doing to me?"
+                [/message]
+		)}
+                [message]
+                    speaker=Avatar
+                    message=_"*laughs*"
+                [/message]
+                [message]
+                    speaker=Tristien
+                    message=_"It's reconnecting me to the dying core..."
+                [/message]
+            [/then]
+            [else]
+                [if]
+                    [variable]
+                        name=tristien.hitpoints
+                        greater_than=25
+                    [/variable]
+                    [then]
+                        [set_variable]
+                            name=tristien.hitpoints
+                            add=-25
+                        [/set_variable]
+                        [unstore_unit]
+                            variable=tristien
+                            find_vacant=no
+                            text=25
+                            {COLOR_HARM}
+                        [/unstore_unit]
+                    [/then]
+                [/if]
+            [/else]
+        [/if]
+    [/event]
+
+        #why does it fire multiple times?
+        [event]
+            name=side 2 turn
+            [filter_condition]
+                [have_unit]
+                    id=Tristien
+                [/have_unit]
+                [have_unit]
+                    id=Avatar
+                [/have_unit]
+                [variable]
+                    name=tristien.hitpoints
+                    less_than=150
+                [/variable]
+                [variable]
+                    name=tristien.hitpoints
+                    greater_than=1
+                [/variable]
+            [/filter_condition]
+            [message]
+                speaker=Avatar
+                message=_"The machines were necessary at the time, but now you are getting in the way!  I'll free your slaves, may they clear you from my path!"
+            [/message]
+	    {TRANSFORM_UNIT (type=Tri_Mech_Cyborg) "Soulless"}
+	    {MODIFY_UNIT (type=Soulless) side 2}
+ #           [kill]
+ #               side=4
+ #               type=Tri_Mech_Cyborg
+                #                [and]
+                #                    [not]
+                #                        id=Mech_D
+                #                    [/not]
+                #                [/and]
+                #                [and]
+                #                    [not]
+                #                        id=Tristien
+                #                    [/not]
+                #                [/and]
+#                animate=yes
+#            [/kill]
+            [message]
+                speaker=Tristien
+                message=_"... I don't need them to destroy you!  Our kind will triumph over ... whatever you are!"
+            [/message]
+#ifdef __UNUSED__
+            [event]
+                name=side 2 turn
+                first_time_only=no
+                [filter_condition]
+                    [have_unit]
+                        id=Tristien
+                    [/have_unit]
+                [/filter_condition]
+                [kill]
+                    side=4
+                    [and]
+                        [not]
+                            id=Mech_D
+                        [/not]
+                    [/and]
+                    [and]
+                        [not]
+                            id=Tristien
+                        [/not]
+                    [/and]
+                    animate=yes
+                [/kill]
+            [/event]
+#endif
+        [/event]
+
+    # Tristien explodes when he dies, harming everyone around him
+    [event]
+# testing
+#	name=turn 2
+        name=last_breath
+        [filter]
+            id=Tristien
+        [/filter]
+        [message]
+            speaker=Tristien
+            message=_"So, this is how I end ...  But I will take you down with me!"
+        [/message]
+        [message]
+            speaker=narrator
+            message=_"The wounded metal-man started to emit a strange hum, that seemed to come from his gut.  It got louder and louder, until-"
+        [/message]
+        {FLASH_WHITE (
+            [sound]
+                name=explosion.ogg
+            [/sound]
+            [terrain]
+                terrain=Uu^Crby
+                x,y=$x1,$y1
+                layer=overlay
+            [/terrain]
+            [redraw]
+                side=1,3,5
+            [/redraw]
+            [harm_unit]
+                [filter]
+                    [filter_adjacent]
+                        id=Tristien
+                    [/filter_adjacent]
+                [/filter]
+                amount=24
+                kill=no
+                animate=no
+                damage_type=fire
+            [/harm_unit]
+            [kill]
+                id=Tristien
+            [/kill]
+        [delay]
+            time=1600
+        [/delay]
+        )}
+        [message]
+            speaker=Avatar
+            message=_"General Tristien has made his exit, but it appears he was all flash and no substance!"
+        [/message]
+        [message]
+            speaker=Dardrus
+            message=_"(His death was spectacular...)"
+        [/message]
+        [message]
+            speaker=Bresda
+            message=_"(I wonder if that big monster machine can do the same thing?)"
+        [/message]
+        [message]
+            speaker=Avatar
+            message=_"So long, robots!"
+        [/message]
+        {FLASH_RED (
+            [kill]
+                type="Tri_Mech_Drone,Tri_Mech_Defender,Tri_Mech_Sentinel,Tri_Mech_Scout,Tri_Mech_Cyborg,Tri_Mech_Tank,Tri_Mech_Android,Tri_Blue_Mage,Tri_Azure_Mage"
+                animate=yes
+            [/kill]
+            [message]
+                speaker=Mech_D
+                message=_"SYSTEMS OVERLOAD!"
+                image="portraits/mech-d.png~CS(60,-10,-20)"
+            [/message]
+            [transform_unit]
+                id=Mech_D
+                transform_to=Mech_Seth Dragon2
+            [/transform_unit]
+        )}
+        [message]
+            speaker=Dardrus
+            message=_"(Can the big machine also explode?  We may be about to find out...)"
+        [/message]
+        # so that Mech_D doesn't try to get itself killed
+        [modify_ai]
+            side=4
+            action=add
+            path=aspect[aggression].facet[]
+            [facet]
+                # not sure if this is needed  ->      	    invalidate_on_gamestate_change=yes
+                value=-1
+            [/facet]
+        [/modify_ai]
+        [modify_ai]
+            side=4
+            action=add
+            path=aspect[caution].facet[]
+            [facet]
+                # not sure if this is needed  ->      	    invalidate_on_gamestate_change=yes
+                value=2
+            [/facet]
+        [/modify_ai]
+        # try to get it to head north...
+	# this is not working.
+        [modify_ai]
+            side=4
+            action=add
+            path=goal
+            [goal]
+                name=target_location
+                [criteria]
+                    x,y=28,9
+                [/criteria]
+                value=32
+            [/goal]
+        [/modify_ai]
+    [/event]
+
+    [event]
+        name=attack_end
+        [filter]
+            side=1,3
+            [or]
+                type=Trinity Avatar4
+            [/or]
+        [/filter]
+        [filter_second]
+            type=Trinity Avatar4
+            [or]
+                side=1,3
+            [/or]
+        [/filter_second]
+        [message]
+            speaker=Avatar
+            message=_"*(laughter)*"
+        [/message]
+        [message]
+            speaker=Haldrad
+            message=_"How are we ever going to defeat this thing?"
+        [/message]
+        [message]
+            speaker=Lyron
+            message=_"Maybe we don't need to..."
+        [/message]
+        [message]
+            speaker=Haldrad
+            message=_"What do you mean?"
+        [/message]
+        [message]
+            speaker=Lyron
+            message=_"That building in the north seems to be a kind of gate.  What if we direct our attack against that?"
+        [/message]
+        [message]
+            speaker=Haldrad
+            message=_"And just how do we do that?"
+        [/message]
+        [message]
+            speaker=Mech_D
+            message=_"*SCREECH*  ... No Signal!"
+            image=portraits/mech-d.png~CS(60,-10,-20)
+        [/message]
+        [message]
+            speaker=Ponce
+            message=_"There you go, Prince!  We send that unstable war machine through the portal!"
+        [/message]
+        [message]
+            speaker=Haldrad
+            message=_"Hrmm, I see.  But how do we get the machine to go through the portal?"
+        [/message]
+        [message]
+            speaker=Nemesis
+            message=_"I am a god, I can herd it into position."
+        [/message]
+        [message]
+            speaker=Haldrad
+            message=_"All right then.  We'll help clear the way, and then we need to get to the Sky Mountain to escape."
+        [/message]
+        [objectives]
+            side=1,3,5
+            [objective]
+                condition=win
+                description=_ "Nemesis pushes Mechanical Dragon into the Avatars' portal."
+            [/objective]
+            [objective]
+                condition=lose
+                description=_ "Death of Haldrad"
+            [/objective]
+            [objective]
+                condition=lose
+                description=_ "Death of Lyron"
+            [/objective]
+            [objective]
+                condition=lose
+                description=_ "Death of Ponce"
+            [/objective]
+            [objective]
+                condition=lose
+                description=_ "Death of Dardrus"
+            [/objective]
+            [objective]
+                condition=lose
+                description=_ "Death of Bresda"
+            [/objective]
+            [objective]
+                condition=lose
+                description=_ "Death of Mechanical Dragon"
+            [/objective]
+            note=_"Nemesis moves the Mechanical Dragon by attacking it and forcing it back.  Be careful not to send it off a cliff."
+        [/objectives]
+	[set_variable]
+	   name=endgame_np
+	   value=yes
+	[/set_variable]
+    [/event]
+
+    # testing
+#ifdef __UNUSED__
+    [event]
+        name=turn 6
+        [message]
+            speaker=Mech_D
+            message=_"Core temperature rising ... "
+        [/message]
+        {MOVE_UNIT (id=Mech_D) 28 5}
+        [message]
+            speaker=Mech_D
+            message=_"Fire control offline ..."
+        [/message]
+        [store_unit]
+            [filter]
+                id=Mech_D
+            [/filter]
+            variable=mech_d
+            kill=yes
+            animate=yes
+        [/store_unit]
+        [item]
+            halo=halo/lighthouse-aura.png~CS(100,-200,200)
+            x,y=28,2
+        [/item]
+        [redraw]
+            side=1,3,5
+        [/redraw]
+        {FLASH_RED ({QUAKE "rumble.ogg"}
+        [terrain]
+            terrain=Uu^Crby
+            x,y=$mech_d.x|,$mech_d.y|
+            layer=overlay
+        [/terrain]
+        [terrain]
+            terrain=Uu^Ryft
+            x=21-23,33-36
+            y=6,1
+            layer=overlay
+        [/terrain]
+        [terrain]
+            terrain=Tbmy
+            x,y=28,1
+        [/terrain]
+    )}
+    [remove_item]
+        halo=halo/lighthouse-aura.png~CS(100,-200,200)
+        x,y=28,2
+    [/remove_item]
+    [redraw]
+        side=1,3,5
+    [/redraw]
+    [scroll_to]
+        x,y=28,1
+    [/scroll_to]
+    [delay]
+        time=3000
+    [/delay]
+    [color_adjust]
+        red,green,blue=25,-5,-5
+    [/color_adjust]
+    [message]
+        speaker=Avatar
+        message=_"No!"
+    [/message]
+    [kill]
+        id=Avatar
+        animate=yes
+    [/kill]
+    [message]
+        side=3
+        message=_"We need to get out of here!"
+    [/message]
+    [message]
+        speaker=Nemesis
+        message=_"Get back into the mountain..."
+    [/message]
+[/event]
+#endif
+
+# Nemesis pushes Mech_D
+# first time, if it is premature, a bit of dialogue
+
+[event]
+    name=attack
+    [filter_condition]
+	[not]
+	[variable]
+	    name=endgame_np
+	    equals=yes
+	[/variable]
+	[/not]
+    [/filter_condition]
+    [filter]
+	id=Nemesis
+    [/filter]
+    [filter_second]
+	id=Mech_D
+    [/filter_second]
+    [message]
+        speaker=Nemesis
+        message=_"Down with you, infernal machine!"
+    [/message]
+    [message]
+        speaker=Mech_D
+        message=_"Grrrr...."
+    [/message]
+    [message]
+        speaker=Bresda
+        message=_"Isht-, I mean, Nemesis!  Is it wise to spend time smashing that thing?  The machines are currently fighting the daemons, as are we."
+    [/message]
+    [message]
+        speaker=Nemesis
+        message=_"I know what I am doing, young one.  But I'll take your words under advisement."
+    [/message]
+[/event]    
+
+
+#define TRI_DP_NEMESIS_PUSH_DIRECTION N_LOC MD_LOC
+[event]
+    name=attack
+    first_time_only=no
+    [filter_condition]
+	[variable]
+	    name=endgame_np
+	    equals=yes
+	[/variable]
+    [/filter_condition]
+    [filter]
+        id=Nemesis
+	[filter_adjacent]
+    	    id=Mech_D
+	    adjacent={N_LOC}
+	[/filter_adjacent]
+    [/filter]
+    [filter_second]
+        id=Mech_D
+    [/filter_second]
+    [store_locations]
+        variable=new_spot
+	[and]
+	    [filter_adjacent_location]
+		[filter]
+		id=Mech_D
+		[/filter]
+		adjacent={MD_LOC}
+	    [/filter_adjacent_location]
+	[/and]
+    [/store_locations]
+	[fire_event]
+	name=nemesis_push
+	[/fire_event]
+[/event]
+#enddef
+
+{TRI_DP_NEMESIS_PUSH_DIRECTION n s}
+{TRI_DP_NEMESIS_PUSH_DIRECTION ne sw}
+{TRI_DP_NEMESIS_PUSH_DIRECTION nw se}
+{TRI_DP_NEMESIS_PUSH_DIRECTION s n}
+{TRI_DP_NEMESIS_PUSH_DIRECTION sw ne}
+{TRI_DP_NEMESIS_PUSH_DIRECTION se nw}
+
+#undef TRI_DP_NEMESIS_PUSH_DIRECTION
+
+[event]
+   name=new_turn
+   first_time_only=no
+   [set_variable]
+	name=push_turns
+# can be graded for difficulty, but not now
+	value=8
+   [/set_variable]
+[/event]
+
+
+
+[event]
+    name=nemesis_push
+    first_time_only=no
+# this had errors
+#ifdef __UNUSED__
+    name=attack
+    first_time_only=no
+    [filter]
+        id=Nemesis
+    [/filter]
+    [filter_second]
+        id=Mech_D
+    [/filter_second]
+    [store_locations]
+        variable=new_spot
+        [and]
+            [filter]
+                id=Mech_D
+            [/filter]
+            radius=1
+        [/and]
+        [and]
+            [not]
+                [filter]
+                    id=Mech_D
+                [/filter]
+            [/not]
+        [/and]
+        [and]
+            [not]
+                [filter]
+                    id=Nemesis
+                [/filter]
+                radius=1
+            [/not]
+        [/and]
+    [/store_locations]
+#endif
+    [teleport]
+        [filter]
+            id=Mech_D
+        [/filter]
+        x,y=$new_spot[0].x|,$new_spot[0].y|
+        animate=no
+        check_passability=no
+    [/teleport]
+    # so Nemesis can keep pushing the Mech_D, just to keep this from being tedious - but not all the way in one turn, that would also be tedious
+    [if]
+	[variable]
+	   name=push_turns
+	   greater_than=0
+	[/variable]
+	[then]
+	    [modify_unit]
+	        [filter]
+	            id=Nemesis
+	        [/filter]
+	        moves=2
+	        attacks_left=1
+	    [/modify_unit]
+	[/then]
+    [/if]
+	[print]
+	text="$push_turns|" + _" pushes left this turn."
+	size=36
+	duration=120
+	reg,green,blue=90,120,250
+	[/print]    
+	[set_variable]
+	   name=push_turns
+	   add=-1
+	[/set_variable]
+    # Mech_D falls off a cliff, player loses
+    [if]
+        [have_location]
+            [filter]
+                id=Mech_D
+            [/filter]
+            terrain=Qxu*,Qxu^Scoz,*^Ryft,
+        [/have_location]
+        [then]
+            [kill]
+                id=Mech_D
+            [/kill]
+            [message]
+                speaker=Nemesis
+                message=_"Into the void with you, foul machine!"
+            [/message]
+            [message]
+                speaker=Haldrad
+                message=_"(No...  Why did she do that...)  That plan is ruined, any other ideas?"
+            [/message]
+            [message]
+                speaker=Lyron
+                message=_"It looks pretty hopeless, my Lord."
+            [/message]
+            [endlevel]
+                result=defeat
+            [/endlevel]
+        [/then]
+    [/if]
+    [if]
+        [have_location]
+            [filter]
+                id=Mech_D
+            [/filter]
+            x,y=25-31,4-9
+            [not]
+                terrain=Qxu*,Qxu^Scoz,*^Ryft
+            [/not]
+        [/have_location]
+        [then]
+            [message]
+                speaker=Mech_D
+                message=_"Fire control offline ..."
+            [/message]
+            {MOVE_UNIT (id=Mech_D) 28 5}
+            [message]
+                speaker=Mech_D
+                message=_"Core temperature rising ... No solution ...  Situation is terminal ...  Intitiating Self-Destruct Routine!"
+            [/message]
+            #                [store_unit]
+            #		    [filter]
+            #                    id=Mech_D
+            #		    [/filter]
+            #		    variable=mech_d
+            #		    kill=yes
+            #		    animate=yes
+            #                [/store_unit]
+            [kill]
+                id=Mech_D
+            [/kill]
+            [item]
+                halo=halo/lighthouse-aura.png~CS(100,-200,200)
+                x,y=28,2
+            [/item]
+            [redraw]
+                side=1,3,5
+            [/redraw]
+            {FLASH_RED ({QUAKE "rumble.ogg"}
+            [terrain]
+                terrain=Uu^Crby
+                x,y=29,3
+                #    x,y=$mech_d.x|,$mech_d.y|
+                layer=overlay
+            [/terrain]
+            [terrain]
+                terrain=Uu^Ryft
+                x=21-23,33-36,24-26
+                y=6,1,1
+                layer=overlay
+            [/terrain]
+            [terrain]
+                terrain=Tbmy
+                x,y=28,1
+            [/terrain]
+            [delay]
+                time=300
+            [/delay]
+        )}
+        [remove_item]
+            halo=halo/lighthouse-aura.png~CS(100,-200,200)
+            x,y=28,2
+        [/remove_item]
+        [redraw]
+            side=1,3,5
+        [/redraw]
+        [scroll_to]
+            x,y=28,1
+        [/scroll_to]
+        [delay]
+            time=3000
+        [/delay]
+        [color_adjust]
+            red,green,blue=25,-5,-5
+        [/color_adjust]
+        [message]
+            speaker=Avatar
+            message=_"No!"
+        [/message]
+	{QUAKE "rumble.ogg"}
+        [kill]
+            id=Avatar
+            animate=yes
+        [/kill]
+	{QUAKE "lightning.ogg"}
+	{QUAKE "rumble.ogg"}
+        [message]
+            side=3
+            message=_"We need to get out of here!  This place is falling apart!"
+        [/message]
+	{QUAKE "rumble.ogg"}
+        [message]
+            speaker=Nemesis
+            message=_"Get back into the mountain..."
+        [/message]
+	{QUAKE "rumble.ogg"}
+        [endlevel]
+            {CONTINUE}
+        [/endlevel]
+    [/then]
+[/if]
+[/event]
+
+[event]
+    name=moveto
+    [filter]
+        [filter_location]
+            terrain=Spay,Aa,Ha,Ms
+        [/filter_location]
+        [not]
+            side=1,3,5
+        [/not]
+    [/filter]
+    [message]
+        speaker=unit
+        message=_"I've reached the Sky Mountain..."
+    [/message]
+    [message]
+        speaker=Haldrad
+        message=_"Don't let them into the mountain!  It's our only way home!"
+    [/message]
+[/event]
+
+[event]
+    name=moveto
+    [filter]
+        x,y=68,58-63
+        [not]
+            side=1,3,5
+        [/not]
+    [/filter]
+    [message]
+        speaker=unit
+        message=_"Entering the Sky Mountain..."
+    [/message]
+    [message]
+        speaker=Haldrad
+        message=_"All is lost..."
+    [/message]
+    [endlevel]
+        result=defeat
+    [/endlevel]
+[/event]
+[/scenario]
