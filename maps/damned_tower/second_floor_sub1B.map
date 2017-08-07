@@ -1,29 +1,26 @@
-border_size=1
-usage=map
-
-Xos, Xos, Xos, Xos, Xol, Xos, Xol, Xos, Xos, Xos, Xol, Xos, Xol, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos
-Xos, Xos, Xos, Xol, Rrc, Rrc^Bryu, Rrc, Xol, Xos, Xol, Rrc, Rrc, Rrc, Xol, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos
-Xos, Xos, Xos, Xos, Rrc, Rrc, Rrc, Xos, Xos, Xos, Rrc, Rrc, Rrc, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos
-Xos, Xos, Xos, Xos, Xos, Rrc, Xos, Rrc^Gye, Rrc, Rrc, Xos, Rrc, Xos, Rr^Gye, Rr, Xos, Xos, Xos, Rr, Rr, Rr, Xos, Xos, Xos, Xos, Xos
-Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Rr, Cud, Rr, Xos, Xos, Rr, Rrc^Ii, Rr, Xos, Xos, Xos, Xos, Xos
-Xos, Xos, Xos, Xos, Xos, Xos, Rr, Xos, Xos, Xos, Xos, Xos, Rr^Gyw, Rr, Rr, Rr, Xos, Xos, Rr^Gyw, Rr, Xos, Xos, Xos, Xos, Xos, Xos
-Xos, Xos, Xos, Xos, Xos, Rr^Edt, Rrc^Ii, Rr^Edt, Xos, Xos, Rr, Rr, Rr, Xos, Xos, Xos, Rr, Rr, Rr, Xos, Xos, Xos, Xos, Xos, Xos, Xos
-Xos, Xos, Xos, Xos, Xos, Rr^Edt, Rr^Edt, Rr^Edt, Xos, Xos, Rr, Rr, Rr^Dr, Xos, Xos, Xos, Rr, Rr, Rr^Dr, Xos, Rr, Urb^Ii, Rr, Xos, Xos, Xos
-Xos, Xos, Xos, Xos, Xos, Xos, Xos, Rr, Rr^Gye, Xos, Xos, Rr, Rr, Xos, Xos, Xos, Rr, Rr, Xos, Xos, Rr, Rr, Rr, Xos, Xos, Xos
-Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Dd, Dd, Dd, Xos, Xos, Rr^Gye, Rr, Rr^Gyw, Xos, Xos, Xos, Xos, Rr^Gyw, Rr, Xos, Xos, Xos, Xos
-Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Dd, Dd, Dd, Xos, Xos, Xos, Rr, Rr, Rr, Xos, Rr, Rr, Rr, Xos, Xos, Xos, Xos, Xos
-Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Rr^Gyw, Dd, Xos, Xos, Xos, Xos, Rr, Cud, Rr, Xos, Rr, Rrc^Ii, Rr, Xos, Xos, Xos, Xos, Xos
-Xos, Xos, Xos, Xos, Xos, Xos, Dd, Dd, Xos, Xos, Xos, Xos, Rr, Rr^Gyw, Xos, Rr, Xos, Xos, Rr^Gyw, Rr, Xos, Xos, Xos, Xos, Xos, Xos
-Xos, Xos, Xos, Xos, Xos, Dd, Cud, Dd, Xos, Xos, Xos, Urb^Ii, Rr, Rr, Xos, Xos, Rr^Dr, Rr^Em, Rr, Xos, Rr, Rr, Rr, Xos, Xos, Xos
-Xos, Xos, Xos, Xos, Xos, Dd, Dd, Dd, Xos, Xos, Rr^Gyw, Rr, Rr, Rr, Xos, Xos, Rr, Rr^Em, Rr, Xos, Rr, Rr, Rr, Xos, Xos, Xos
-Xos, Xos, Xos, Xos, Xos, Xos, Xos, Rr^Gye, Rr, Rr, Xos, Xos, Xos, Rr^Gye, Rr, Rr^Gyw, Xos, Rr, Rr^Gye, Xos, Rr^Gyw, Rr, Rr^Gye, Xos, Xos, Xos
-Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Rr^Dr, Rr, Rr, Xos, Xos, Rr^Es, Rr^Es, Rr, Xos, Xos, Rr, Rr, Rr, Xos, Rr^Edb, Rr^Edb, Rr^Edb, Xos
-Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Rr, Rr, Rr, Xos, Xos, Rr^Es, Rr, Rr, Xos, Xos, Rr^Dr, Rr, Rr, Xos, Rr^Edb, Cud^Edb, Rr^Edb, Xos
-Xos, Xos, Xos, Xos, Xos, Xos, Rr, Rr^Gyw, Xos, Rr, Rr, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Rr, Xos, Xos, Xos, Rr^Edb, Xos, Xos
-Xos, Xos, Xos, Xos, Rr, Rr, Rr, Xos, Xos, Xos, Xos, Rr^Gye, Rr, Xos, Urb^Ii, Xos, Xos, Xos, Xos, Xos, Rr, Rr, Rr, Xos, Xos, Xos
-Xos, Xos, Xos, Xos, Rr, Cud, Rr, Xos, Xos, Xos, Xos, Xos, Rr, Rr, Rr, Rr, Rr, Xos, Rr^Gyw, Rr, Rr, Rrc^Ii, Rr, Xos, Xos, Xos
-Xos, Xos, Xos, Xos, Xos, Rr, Xos, Xos, Xos, Xos, Xos, Xos, Rr^Es, Rr^Dr, Rr^Es, Rr, Rr, Rr, Xos, Xos, Xos, Rr, Xos, Xos, Xos, Xos
-Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Rr, Rr, Rr, Rr, Rr, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos
-Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Rr, Ce, Rr, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos
-Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Ce, 3 Ke, Ce, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos
-Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Rr, Rr, Rr, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos, Xos
+Xoi, Xoi, Xoi, Xoi, Xol, Xos, Xol, Xoi, Xoi, Xoi, Xol, Xos, Xol, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi
+Xoi, Xoi, Xoi, Xol, Rrc, Rrc^Bryu, Rrc, Xos, Xos, Xol, Rrc, Rrc, Rrc, Xos, Xos, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi
+Xoi, Xoi, Xoi, Xos, Rrc, Rrc, Rrc, Xos, Xos, Xos, Rrc, Rrc, Rrc, Xom, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi
+Xoi, Xoi, Xoi, Xos, Xos, Rrc, Xos, Rr^Pr/, Rrc, Rrc, Xos, Rrc, Xom, Iwr^Pw/, Iwr, Xoi, Xoi, Xoi, Iwr, Iwr, Iwr, Xoi, Xoi, Xoi, Xoi, Xoi
+Xoi, Xoi, Xoi, Xoi, Xoi, Xos, Xos, Xos, Xos, Xos, Xoi, Xoi, Xoi, Iwr, Ce, Iwr, Xoi, Xoi, Iwr, Iwr^Ii, Iwr, Xoi, Xoi, Xoi, Xoi, Xoi
+Xoi, Xoi, Xoi, Xoi, Xos, Xos, Rr, Xos, Xos, Xoi, Xoi, Xoi, Iwr^Pw\, Iwr, Iwr, Iwr, Xoi, Xoi, Iwr^Pw\, Iwr, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi
+Xoi, Xoi, Xoi, Xoi, Xos, Rr^Edt, Rrc^Ii, Rr^Edt, Xos, Xoi, Iwr, Iwr, Iwr, Xoi, Xoi, Xoi, Iwr, Iwr, Iwr, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi
+Xoi, Xoi, Xoi, Xoi, Xos, Rr^Edt, Rr^Edt, Rr^Edt, Xos, Xoi, Iwr, Iwr, Rr^Dr, Xoi, Xoi, Xoi, Iwr, Iwr, Rr^Dr, Xoi, Iwr, Urb^Ii, Iwr, Xoi, Xoi, Xoi
+Xoi, Xoi, Xoi, Xoi, Xoi, Xos, Xos, Rr, Rr^Pr/, Xos, Xos, Iwr, Iwr, Xoi, Xoi, Xoi, Iwr, Iwr, Xoi, Xoi, Iwr, Iwr, Iwr, Xoi, Xoi, Xoi
+Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xos, Dd, Dd, Dd, Xoi, Xoi, Iwr^Pw/, Iwr, Iwr^Pw\, Xoi, Xoi, Xoi, Xoi, Iwr^Pw\, Iwr, Xoi, Xoi, Xoi, Xoi
+Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xos, Dd, Dd, Dd, Xos, Xoi, Xoi, Iwr, Iwr, Iwr, Xoi, Iwr, Iwr, Iwr, Xoi, Xoi, Xoi, Xoi, Xoi
+Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xos, Xos, Rr^Pr\, Dd, Xos, Xos, Xoi, Xoi, Iwr, Ce, Iwr, Xoi, Iwr, Iwr^Ii, Iwr, Xoi, Xoi, Xoi, Xoi, Xoi
+Xoi, Xoi, Xoi, Xoi, Xos, Xos, Dd, Dd, Xos, Xos, Xoi, Xoi, Iwr, Iwr^Pw\, Xoi, Iwr, Xoi, Xoi, Iwr^Pw\, Iwr, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi
+Xoi, Xoi, Xoi, Xoi, Xos, Dd, Ce, Dd, Xos, Xoi, Xoi, Urb^Ii, Iwr, Iwr, Xoi, Xoi, Iwr^Dr, Iwr^Em, Iwr, Xoi, Iwr, Iwr, Iwr, Xoi, Xoi, Xoi
+Xoi, Xoi, Xoi, Xos, Xos, Dd, Dd, Dd, Xom, Xoi, Iwr^Pw\, Iwr, Iwr, Iwr, Xoi, Xoi, Iwr, Iwr^Em, Iwr, Xoi, Iwr, Iwr, Iwr, Xoi, Xoi, Xoi
+Xoi, Xoi, Xoi, Xoi, Xoi, Xos, Xom, Iwr^Pw/, Iwr, Iwr, Xoi, Xoi, Xoi, Iwr^Pw/, Iwr, Iwr^Pw\, Xoi, Iwr, Iwr^Pw/, Xoi, Iwr^Pw\, Iwr, Iwr^Pw/, Xoi, Xoi, Xoi
+Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Iwr^Dr, Iwr, Iwr, Xoi, Xoi, Iwr^Es, Iwr^Es, Iwr, Xoi, Xoi, Iwr, Iwr, Iwr, Xoi, Iwr^Edb, Iwr^Edb, Iwr^Edb, Xoi
+Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Iwr^Es, Iwr^Es, Iwr, Xoi, Xoi, Iwr^Es, Iwr, Iwr, Xoi, Xoi, Rr^Dr, Iwr, Iwr, Xoi, Iwr^Edb, Ce, Iwr^Edb, Xoi
+Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Iwr, Iwr^Pw\, Xoi, Iwr, Iwr, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Iwr, Xoi, Xoi, Xoi, Iwr^Edb, Xoi, Xoi
+Xoi, Xoi, Xoi, Xoi, Iwr, Iwr, Iwr, Xoi, Xoi, Xoi, Xoi, Iwr^Pw/, Iwr, Xoi, Urb^Ii, Xoi, Xoi, Xoi, Xoi, Xoi, Iwr, Iwr, Iwr, Xoi, Xoi, Xoi
+Xoi, Xoi, Xoi, Xoi, Iwr, Ce, Iwr, Xoi, Xoi, Xoi, Xoi, Xoi, Iwr, Iwr, Iwr, Iwr, Iwr, Xoi, Iwr^Pw\, Iwr, Iwr, Iwr^Ii, Iwr, Xoi, Xoi, Xoi
+Xoi, Xoi, Xoi, Xoi, Xoi, Iwr, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Iwr, Iwr^Dr, Iwr^Es, Iwr, Iwr, Iwr, Xoi, Xoi, Xoi, Iwr, Xoi, Xoi, Xoi, Xoi
+Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Iwr, Iwr^Es, Iwr, Iwr, Iwr, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi
+Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Iwr, Ce, Iwr, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi
+Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Ce, 3 Ke, Ce, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi
+Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Rr, Rr, Rr, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi, Xoi
