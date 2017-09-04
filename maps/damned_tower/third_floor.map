@@ -1,8 +1,5 @@
-border_size=1
-usage=map
-
-Xos, Xos, Qxu, Qxu^Chyp, Qxu, Qxu^Chyp, Qxu^Chyp, Qxu^Chyp, Qxu, Qxu^Chyp, Qxu^Chyp, Qxu^Chyp, Qxu, Qxu, Qxu, Qxu, Qxu, Xos, Xos, Xos, Rr, Rr, Rr, Rr, Rr, Xos, Xos, Xos, Xos, Xos, Qxu, Qxu, Qxu, Qxu^Chyp, Qxu^Chyp, Qxu^Chyp, Qxu^Chyp, Qxu^Chyp, Qxu^Chyp, Qxu^Chyp, Qxu^Chyp, Qxu, Qxu, Xos, Xos, Xos
-Xos, Xos, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Xos, Xos, Xos, Xos, Rr, Rr, Rr, Xos, Xos, Qxu, Xos, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Xos, Xos, Xos
+Xos, Xos, Qxu, Qxu^Chyp, Qxu, Qxu^Chyp, Qxu^Chyp, Qxu^Chyp, Qxu, Qxu^Chyp, Qxu^Chyp, Qxu^Chyp, Qxu, Qxu, Qxu, Qxu, Qxu, Xos, Xos, Xos, Rr, Rr, Xos, Rr, Rr, Xos, Xos, Xos, Xos, Xos, Qxu, Qxu, Qxu, Qxu^Chyp, Qxu^Chyp, Qxu^Chyp, Qxu^Chyp, Qxu^Chyp, Qxu^Chyp, Qxu^Chyp, Qxu^Chyp, Qxu, Qxu, Xos, Xos, Xos
+Xos, Xos, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Xos, Xos, Xos, Xos, Rr^Pr/, Rr, Rr^Pr\, Xos, Xos, Qxu, Xos, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Xos, Xos, Xos
 Xos, Xos, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Fypd, Qxu, Qxu, Qxu, Qxu, Xos, Uu, Rr, Ur, Rr, Uu, Xos, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Xos, Xos, Xos
 Xos, Xos, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Fypd, Fypd, Fypd^Fypp, Fypd, Fypd, Qxu, Qxu, Uh, Uu, Ur, Ur, Ur, Uh, Qxu, Qxu, Qxu, Qxu, Qxu, Fypd, Fypd, Fypd, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Xos, Xos, Xos
 Xos, Xos, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Fypd, Fypd, Fypd, Fypd, Fypd, Fypd, Qxu, Qxu, Qxu, Ur, Ur, Qxu^Bp\, Qxu^Bp\, Qxu^Bp\, Qxu^Bp\, Qxu, Qxu, Qxu, Qxu^Xyb/, Fypd, Fypd, Fypd, Qxu^Xyb\, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Qxu, Xos, Xos, Xos
