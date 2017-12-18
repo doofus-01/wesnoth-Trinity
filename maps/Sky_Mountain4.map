@@ -1,21 +1,18 @@
-border_size=1
-usage=map
-
-Wuy, Wuy, Wuy, Wuy, Wuy, Qxu, Qxu, Qxu, Qxu, Qxu, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Mybd, Mybd, Mybd, Mybd
-Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Qxu, Uh, Uh, Mybd^Dr, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Mybd, Mybd, Mybd, Mybd, Mybd, Mybd
-Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Uh, Wuy, Uh^Dr, Mybd^Dr, Mybd, Mybd, Wuy, Wuy, Wuy, Mybd, Wuy, Wuy, Wuy, Wuy, Wuy, Mybd, Mybd^Bryl, Mybd, Mybd, 2 Mybd, Mybd, Mybd, Mybd, Mybd, Mybd
-Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Mybd, Mybd, Mybd, Mybd, Mybd, Wuy, Mybd, Mybd, Mybd, Mybd, Mybd, Mybd, Mybd, Mybd, Mybd, Mybd, Mybd, Wuy, Wuy, Wuy, Wuy
-Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Mybd, Mybd, Mybd^Dr, Mybd, Mybd, Mybd, Mybd, Mybd, Mybd, Mybd, 3 Mybd, Mybd, Mybd, Mybd, Mybd, Mybd, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy
-Wuy, Wuy, Pryf, Wuy, Mybd, Wuy, Mybd, Mybd, Mybd, Mybd, Mybd^Dr, Mybd, Wuy, Wuy, Wuy, Mybd, Mybd, Mybd, Mybd, Mybd, Mybd, Mybd, Mybd, Mybd, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy
-Wuy, Pryf^Eyt, Pryf, Mybd^Pyg, Mybd, Mybd, Mybd^Dr, Mybd^Dr, Wuy, Mybd, Mybd, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Mybd, Mybd, Mybd, Mybd, Mybd, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy
-Wuy, Pryf, Mybd^Pyg, Mybd^Pyg, Mybd, Mybd, Wuy, Wuy, Wuy, Wuy, Mybd, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Mybd, Mybd, Mybd, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy
-Wuy, Mybd^Pyg, Mybd, Mybd, Mybd, Mybd, Mybd, Mybd, Mybd, Mybd, Wuy, Mybd, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Mybd, Mybd, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy
-Wuy, Mybd, Mybd, Mybd^Ayb, Mybd, Mybd, Mybd, Mybd, Mybd, Wuy, Mybd, Mybd, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Myb, Myb, Myb, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy
-Wuy, Mybd, Mybd, Mybd, Mybd, Mybd, Mybd, Mybd, Mybd, Mybd, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Myb, Myb, Myb, Myb, Myb, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy
-Wuy, Wuy, Mybd, Mybd^Bryu, Mybd, Mybd, Wuy, Mybd, Mybd^Dr, Mybd, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Myb, Myb, Myb, Myb, Myb, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Wuy
-Wuy, Wuy, Wuy, Mybd, Wuy, Wuy, Wuy, Cpy, Cpy, Cpy, Xyui, Xyui, Xyui, Wuy, Xyui, Wuy, Xyui, Wuy, Uyi, Spay, Spay, Uyi, Uyi, Wuy, Xyui, Wuy, Xyui, Wuy, Xyui, Wuy, Xyui, Xyui
-Wuy, Wuy, Wuy, Wuy, Wuy, Wuy, Uyi^Dr, Uyi, Spay, Uyi^Dr, Xyui, Xyui, Xyui, Xyui, Xyui, Xyui, Xyui, Xyui, Uyi, Uyi, Spay, Spay, Spay, Uyi, Uyi, Xyui, Xyui, Xyui, Xyui, Xyui, Xyui, Xyui
-Xyui, Wuy, Uyi, Wuy, Uyi, Uyi, Spay, Spay, Uyi, Uyi, Xyui, Xyui, Xyui, Xyui, Ha, Xyui, Xyui, Xyui, Xyui, Uyi, Uyi, Spay, Spay, Spay, Uyi, Uyi, Uyi, Uyi, Xyui, Xyui, Xyui, Xyui
+Xopy, Xopy, Xopy, Xopy, Xopy, Qxu, Qxu, Qxu, Qxu, Qxu, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Mybd, Mybd, Mybd, Mybd
+Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Qxu, Uh, Uh, Mybd^Dr, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Mybd, Mybd, Mybd, Mybd, Mybd, Mybd
+Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Uh, Xopy, Uh^Dr, Mybd^Dr, Mybd, Mybd, Xopy, Xopy, Xopy, Mybd, Xopy, Xopy, Xopy, Xopy, Xopy, Mybd, Mybd^Bryl, Mybd, Mybd, 2 Mybd, Mybd, Mybd, Mybd, Mybd, Mybd
+Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Mybd, Mybd, Mybd, Mybd, Mybd, Xopy, Mybd, Mybd, Mybd, Mybd, Mybd, Mybd, Mybd, Mybd, Mybd, Mybd, Mybd, Xopy, Xopy, Xopy, Xopy
+Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Mybd, Mybd, Mybd^Dr, Mybd, Mybd, Mybd, Mybd, Mybd, Mybd, Mybd, 3 Mybd, Mybd, Mybd, Mybd, Mybd, Mybd, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy
+Xopy, Xopy, Pryf, Xopy, Mybd, Xopy, Mybd, Mybd, Mybd, Mybd, Mybd^Dr, Mybd, Xopy, Xopy, Xopy, Mybd, Mybd, Mybd, Mybd, Mybd, Mybd, Mybd, Mybd, Mybd, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy
+Xopy, Pryf^Eyt, Pryf, Mybd^Pyg, Mybd, Mybd, Mybd^Dr, Mybd^Dr, Xopy, Mybd, Mybd, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Mybd, Mybd, Mybd, Mybd, Mybd, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy
+Xopy, Pryf, Mybd^Pyg, Mybd^Pyg, Mybd, Mybd, Xopy, Xopy, Xopy, Xopy, Mybd, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Mybd, Mybd, Mybd, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy
+Xopy, Mybd^Pyg, Mybd, Mybd, Mybd, Mybd, Mybd, Mybd, Mybd, Mybd, Xopy, Mybd, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Mybd, Mybd, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy
+Xopy, Mybd, Mybd, Mybd^Ayb, Mybd, Mybd, Mybd, Mybd, Mybd, Xopy, Mybd, Mybd, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Myb, Myb, Myb, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy
+Xopy, Mybd, Mybd, Mybd, Mybd, Mybd, Mybd, Mybd, Mybd, Mybd, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Myb, Myb, Myb, Myb, Myb, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy
+Xopy, Xopy, Mybd, Mybd^Bryu, Mybd, Mybd, Xopy, Mybd, Mybd^Dr, Mybd, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Myb, Myb, Myb, Myb, Myb, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Xopy
+Xopy, Xopy, Xopy, Mybd, Xopy, Xopy, Xopy, Cpy, Cpy, Cpy, Xyui, Xyui, Xyui, Xopy, Xyui, Xopy, Xyui, Xopy, Uyi, Spay, Spay, Uyi, Uyi, Xopy, Xyui, Xopy, Xyui, Xopy, Xyui, Xopy, Xyui, Xyui
+Xopy, Xopy, Xopy, Xopy, Xopy, Xopy, Uyi^Dr, Uyi, Spay, Uyi^Dr, Xyui, Xyui, Xyui, Xyui, Xyui, Xyui, Xyui, Xyui, Uyi, Uyi, Spay, Spay, Spay, Uyi, Uyi, Xyui, Xyui, Xyui, Xyui, Xyui, Xyui, Xyui
+Xyui, Xopy, Uyi, Xopy, Uyi, Uyi, Spay, Spay, Uyi, Uyi, Xyui, Xyui, Xyui, Xyui, Ha, Xyui, Xyui, Xyui, Xyui, Uyi, Uyi, Spay, Spay, Spay, Uyi, Uyi, Uyi, Uyi, Xyui, Xyui, Xyui, Xyui
 Xyui, Xyui, Uyi, Uyi, Spay, Spay, Uyi, Uyi, Uyi, Ha, Xyui, Xyui, Xyui, Aa, Xyui, Xyui, Xyui, Xyui, Xyui, Xyui, Xyui, Uyi, Uyi, Spay, Spay, Uyi, Uyi, Uyi, Uyi, Xyui, Xyui, Xyui
 Xyui, Uyi, Ha, Spay, Spay, Spay, Uyi, Uyi, Xyui, Xyui, Xyui, Xyui, Xyui, Aa, Ha, Xyui, Xyui, Xyui, Xyui, Xyui, Xyui, Xyui, Xyui, Uyi, Uyi, 1 Spay, Spay, Uyi, Uyi, Xyui, Xyui, Xyui
 Xyui, Uyi, Spay, Spay, Uyi, Uyi, Ha, Xyui, Xyui, Xyui, Xyui, Xyui, Ha, Xyui, Aa, Xyui, Xyui, Xyui, Xyui, Xyui, Xyui, Xyui, Xyui, Xyui, Xyui, Uyi, Uyi, Spay, Spay, Uyi, Uyi, Xyui
